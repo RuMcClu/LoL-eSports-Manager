@@ -1,0 +1,3439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{08832AC8-4DC6-443D-B20D-90FC0A6431F2}</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <ContentRootDirectory>Content</ContentRootDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>LOL1Content</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="playbutton.jpg">
+      <Name>playbutton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Leaguescreen.JPG">
+      <Name>Leaguescreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LeaguePlay.JPG">
+      <Name>LeaguePlay</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="leagueassets\icons\554_NA_Cloud9.jpg">
+      <Name>554_NA_Cloud9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\555_NA_Curse.jpg">
+      <Name>555_NA_Curse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\556_NA_Dignitas.jpg">
+      <Name>556_NA_Dignitas</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\557_NA_TeamCoast.jpg">
+      <Name>557_NA_TeamCoast</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\558_NA_TSM.jpg">
+      <Name>558_NA_TSM</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\559_NA_Velocity.jpg">
+      <Name>559_NA_Velocity</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\560_NA_Vulcan.jpg">
+      <Name>560_NA_Vulcan</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\561_NA_CLG.jpg">
+      <Name>561_NA_CLG</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\562_EU_EG.jpg">
+      <Name>562_EU_EG</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\563_EU_Fnatic.jpg">
+      <Name>563_EU_Fnatic</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\564_EU_Gambit.jpg">
+      <Name>564_EU_Gambit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\565_EU_LemonDog.jpg">
+      <Name>565_EU_LemonDog</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\566_EU_MYM.jpg">
+      <Name>566_EU_MYM</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\567_EU_NIP.jpg">
+      <Name>567_EU_NIP</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\568_EU_SKGaming.jpg">
+      <Name>568_EU_SKGaming</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\569_EU_Alternate.jpg">
+      <Name>569_EU_Alternate</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\570_GamingGear.jpg">
+      <Name>570_GamingGear</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\571_Pain.jpg">
+      <Name>571_Pain</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\572_Lyon.jpg">
+      <Name>572_Lyon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\573_Immunity.jpg">
+      <Name>573_Immunity</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\574_DarkPassage.jpg">
+      <Name>574_DarkPassage</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\593_2014OGN_SKTT1.jpg">
+      <Name>593_2014OGN_SKTT1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\594_2014OGN_TeamNB.jpg">
+      <Name>594_2014OGN_TeamNB</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\595_2014OGN_CJEntusBlaze.jpg">
+      <Name>595_2014OGN_CJEntusBlaze</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\596_2014OGN_NajinBlacksword.jpg">
+      <Name>596_2014OGN_NajinBlacksword</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\597_2014OGN_SamsungGalaxyBlue.jpg">
+      <Name>597_2014OGN_SamsungGalaxyBlue</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\598_2014OGN_JinAirGreenwingsFalcons.jpg">
+      <Name>598_2014OGN_JinAirGreenwingsFalcons</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\599_2014OGN_KTRolsterArrows.jpg">
+      <Name>599_2014OGN_KTRolsterArrows</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\600_2014OGN_IncredibleMiracle.jpg">
+      <Name>600_2014OGN_IncredibleMiracle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\601_2014OGN_AlienwareArena.jpg">
+      <Name>601_2014OGN_AlienwareArena</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\602_2014OGN_XenicsStorm.jpg">
+      <Name>602_2014OGN_XenicsStorm</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\607_2014LunarRevel_PathofTruth_Winner.jpg">
+      <Name>607_2014LunarRevel_PathofTruth_Winner</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\608_2014LunarRevel_PathofPower_Winner.jpg">
+      <Name>608_2014LunarRevel_PathofPower_Winner</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\609_2014LunarRevel_PathofFreedom_Winner.jpg">
+      <Name>609_2014LunarRevel_PathofFreedom_Winner</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\610_2014LunarRevel_PathofTruth.jpg">
+      <Name>610_2014LunarRevel_PathofTruth</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\611_2014LunarRevel_PathofPower.jpg">
+      <Name>611_2014LunarRevel_PathofPower</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\612_2014LunarRevel_PathofFreedom.jpg">
+      <Name>612_2014LunarRevel_PathofFreedom</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\613_2014EULCS_Alliance.jpg">
+      <Name>613_2014EULCS_Alliance</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\614_2014EULCS_CW.jpg">
+      <Name>614_2014EULCS_CW</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\615_2014EULCS_FNC.jpg">
+      <Name>615_2014EULCS_FNC</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\616_2014EULCS_Gambit.jpg">
+      <Name>616_2014EULCS_Gambit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\617_2014EULCS_MIL.jpg">
+      <Name>617_2014EULCS_MIL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\618_2014EULCS_ROC.jpg">
+      <Name>618_2014EULCS_ROC</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\619_2014EULCS_SK.jpg">
+      <Name>619_2014EULCS_SK</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\620_2014EULCS_SUPAHOT.jpg">
+      <Name>620_2014EULCS_SUPAHOT</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\621_2014NALCS_CLG.jpg">
+      <Name>621_2014NALCS_CLG</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\622_2014NALCS_Cloud9.jpg">
+      <Name>622_2014NALCS_Cloud9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\623_2014NALCS_COAST.jpg">
+      <Name>623_2014NALCS_COAST</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\624_2014NALCS_Curse.jpg">
+      <Name>624_2014NALCS_Curse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\625_2014NALCS_Dignitas.jpg">
+      <Name>625_2014NALCS_Dignitas</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\626_2014NALCS_EG.jpg">
+      <Name>626_2014NALCS_EG</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\627_2014NALCS_TSM.jpg">
+      <Name>627_2014NALCS_TSM</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\628_2014NALCS_XDG.jpg">
+      <Name>628_2014NALCS_XDG</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon629.jpg">
+      <Name>profileIcon629</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon630.jpg">
+      <Name>profileIcon630</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon631.jpg">
+      <Name>profileIcon631</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon632.jpg">
+      <Name>profileIcon632</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon633.jpg">
+      <Name>profileIcon633</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon634.jpg">
+      <Name>profileIcon634</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon635.jpg">
+      <Name>profileIcon635</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon636.jpg">
+      <Name>profileIcon636</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon637.jpg">
+      <Name>profileIcon637</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon638.jpg">
+      <Name>profileIcon638</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon639.jpg">
+      <Name>profileIcon639</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon640.jpg">
+      <Name>profileIcon640</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon641.jpg">
+      <Name>profileIcon641</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon642.jpg">
+      <Name>profileIcon642</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon655.jpg">
+      <Name>profileIcon655</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon656.jpg">
+      <Name>profileIcon656</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon657.jpg">
+      <Name>profileIcon657</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon658.jpg">
+      <Name>profileIcon658</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon659.jpg">
+      <Name>profileIcon659</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon660.jpg">
+      <Name>profileIcon660</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon661.jpg">
+      <Name>profileIcon661</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon662.jpg">
+      <Name>profileIcon662</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon663.jpg">
+      <Name>profileIcon663</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon664.jpg">
+      <Name>profileIcon664</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon665.jpg">
+      <Name>profileIcon665</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon666.jpg">
+      <Name>profileIcon666</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon667.jpg">
+      <Name>profileIcon667</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon668.jpg">
+      <Name>profileIcon668</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon669.jpg">
+      <Name>profileIcon669</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon670.jpg">
+      <Name>profileIcon670</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon671.jpg">
+      <Name>profileIcon671</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon672.jpg">
+      <Name>profileIcon672</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon673.jpg">
+      <Name>profileIcon673</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon674.jpg">
+      <Name>profileIcon674</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon675.jpg">
+      <Name>profileIcon675</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon676.jpg">
+      <Name>profileIcon676</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon677.jpg">
+      <Name>profileIcon677</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon678.jpg">
+      <Name>profileIcon678</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon679.jpg">
+      <Name>profileIcon679</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon680.jpg">
+      <Name>profileIcon680</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon681.jpg">
+      <Name>profileIcon681</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon682.jpg">
+      <Name>profileIcon682</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon683.jpg">
+      <Name>profileIcon683</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon684.jpg">
+      <Name>profileIcon684</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon685.jpg">
+      <Name>profileIcon685</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon686.jpg">
+      <Name>profileIcon686</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon687.jpg">
+      <Name>profileIcon687</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon692.jpg">
+      <Name>profileIcon692</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon693.jpg">
+      <Name>profileIcon693</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon694.jpg">
+      <Name>profileIcon694</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon695.jpg">
+      <Name>profileIcon695</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon696.jpg">
+      <Name>profileIcon696</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon697.jpg">
+      <Name>profileIcon697</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon698.jpg">
+      <Name>profileIcon698</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon699.jpg">
+      <Name>profileIcon699</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon700.jpg">
+      <Name>profileIcon700</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon701.jpg">
+      <Name>profileIcon701</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon702.jpg">
+      <Name>profileIcon702</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon703.jpg">
+      <Name>profileIcon703</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon704.jpg">
+      <Name>profileIcon704</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon705.jpg">
+      <Name>profileIcon705</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon706.jpg">
+      <Name>profileIcon706</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon707.jpg">
+      <Name>profileIcon707</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon708.jpg">
+      <Name>profileIcon708</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon709.jpg">
+      <Name>profileIcon709</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon710.jpg">
+      <Name>profileIcon710</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon711.jpg">
+      <Name>profileIcon711</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon712.jpg">
+      <Name>profileIcon712</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon713.jpg">
+      <Name>profileIcon713</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon714.jpg">
+      <Name>profileIcon714</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon715.jpg">
+      <Name>profileIcon715</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon716.jpg">
+      <Name>profileIcon716</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon717.jpg">
+      <Name>profileIcon717</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon718.jpg">
+      <Name>profileIcon718</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon719.jpg">
+      <Name>profileIcon719</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon720.jpg">
+      <Name>profileIcon720</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon721.jpg">
+      <Name>profileIcon721</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon722.jpg">
+      <Name>profileIcon722</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon723.jpg">
+      <Name>profileIcon723</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon724.jpg">
+      <Name>profileIcon724</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon725.jpg">
+      <Name>profileIcon725</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon726.jpg">
+      <Name>profileIcon726</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon727.jpg">
+      <Name>profileIcon727</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon728.jpg">
+      <Name>profileIcon728</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon729.jpg">
+      <Name>profileIcon729</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon730.jpg">
+      <Name>profileIcon730</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon731.jpg">
+      <Name>profileIcon731</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon732.jpg">
+      <Name>profileIcon732</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon733.jpg">
+      <Name>profileIcon733</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon734.jpg">
+      <Name>profileIcon734</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon735.jpg">
+      <Name>profileIcon735</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon736.jpg">
+      <Name>profileIcon736</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon737.jpg">
+      <Name>profileIcon737</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon738.jpg">
+      <Name>profileIcon738</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon739.jpg">
+      <Name>profileIcon739</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon740.jpg">
+      <Name>profileIcon740</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon741.jpg">
+      <Name>profileIcon741</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon742.jpg">
+      <Name>profileIcon742</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon743.jpg">
+      <Name>profileIcon743</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon744.jpg">
+      <Name>profileIcon744</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon745.jpg">
+      <Name>profileIcon745</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon746.jpg">
+      <Name>profileIcon746</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon747.jpg">
+      <Name>profileIcon747</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon748.jpg">
+      <Name>profileIcon748</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon749.jpg">
+      <Name>profileIcon749</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon750.jpg">
+      <Name>profileIcon750</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon751.jpg">
+      <Name>profileIcon751</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon752.jpg">
+      <Name>profileIcon752</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon753.jpg">
+      <Name>profileIcon753</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon754.jpg">
+      <Name>profileIcon754</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon755.jpg">
+      <Name>profileIcon755</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon756.jpg">
+      <Name>profileIcon756</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon757.jpg">
+      <Name>profileIcon757</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon758.jpg">
+      <Name>profileIcon758</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon759.jpg">
+      <Name>profileIcon759</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon760.jpg">
+      <Name>profileIcon760</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon761.jpg">
+      <Name>profileIcon761</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon762.jpg">
+      <Name>profileIcon762</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon763.jpg">
+      <Name>profileIcon763</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon764.jpg">
+      <Name>profileIcon764</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon765.jpg">
+      <Name>profileIcon765</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon766.jpg">
+      <Name>profileIcon766</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon767.jpg">
+      <Name>profileIcon767</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon768.jpg">
+      <Name>profileIcon768</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon769.jpg">
+      <Name>profileIcon769</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon770.jpg">
+      <Name>profileIcon770</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon771.jpg">
+      <Name>profileIcon771</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon772.jpg">
+      <Name>profileIcon772</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon773.jpg">
+      <Name>profileIcon773</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon774.jpg">
+      <Name>profileIcon774</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon775.jpg">
+      <Name>profileIcon775</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon776.jpg">
+      <Name>profileIcon776</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon777.jpg">
+      <Name>profileIcon777</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon778.jpg">
+      <Name>profileIcon778</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon779.jpg">
+      <Name>profileIcon779</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon780.jpg">
+      <Name>profileIcon780</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon781.jpg">
+      <Name>profileIcon781</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon782.jpg">
+      <Name>profileIcon782</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon783.jpg">
+      <Name>profileIcon783</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon784.jpg">
+      <Name>profileIcon784</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon785.jpg">
+      <Name>profileIcon785</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon786.jpg">
+      <Name>profileIcon786</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon787.jpg">
+      <Name>profileIcon787</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon788.jpg">
+      <Name>profileIcon788</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon789.jpg">
+      <Name>profileIcon789</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon790.jpg">
+      <Name>profileIcon790</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon791.jpg">
+      <Name>profileIcon791</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon792.jpg">
+      <Name>profileIcon792</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon793.jpg">
+      <Name>profileIcon793</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon794.jpg">
+      <Name>profileIcon794</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon795.jpg">
+      <Name>profileIcon795</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon796.jpg">
+      <Name>profileIcon796</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon797.jpg">
+      <Name>profileIcon797</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon798.jpg">
+      <Name>profileIcon798</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon799.jpg">
+      <Name>profileIcon799</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon801.jpg">
+      <Name>profileIcon801</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon803.jpg">
+      <Name>profileIcon803</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon804.jpg">
+      <Name>profileIcon804</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon805.jpg">
+      <Name>profileIcon805</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon806.jpg">
+      <Name>profileIcon806</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon808.jpg">
+      <Name>profileIcon808</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon809.jpg">
+      <Name>profileIcon809</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon810.jpg">
+      <Name>profileIcon810</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon811.jpg">
+      <Name>profileIcon811</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon812.jpg">
+      <Name>profileIcon812</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon813.jpg">
+      <Name>profileIcon813</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon814.jpg">
+      <Name>profileIcon814</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon815.jpg">
+      <Name>profileIcon815</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon816.jpg">
+      <Name>profileIcon816</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon817.jpg">
+      <Name>profileIcon817</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon818.jpg">
+      <Name>profileIcon818</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon819.jpg">
+      <Name>profileIcon819</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon820.jpg">
+      <Name>profileIcon820</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon821.jpg">
+      <Name>profileIcon821</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon822.jpg">
+      <Name>profileIcon822</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon823.jpg">
+      <Name>profileIcon823</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon824.jpg">
+      <Name>profileIcon824</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon825.jpg">
+      <Name>profileIcon825</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon826.jpg">
+      <Name>profileIcon826</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon827.jpg">
+      <Name>profileIcon827</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon828.jpg">
+      <Name>profileIcon828</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon829.jpg">
+      <Name>profileIcon829</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon830.jpg">
+      <Name>profileIcon830</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon831.jpg">
+      <Name>profileIcon831</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon832.jpg">
+      <Name>profileIcon832</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon833.jpg">
+      <Name>profileIcon833</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon834.jpg">
+      <Name>profileIcon834</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon835.jpg">
+      <Name>profileIcon835</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon836.jpg">
+      <Name>profileIcon836</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon837.jpg">
+      <Name>profileIcon837</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon838.jpg">
+      <Name>profileIcon838</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon839.jpg">
+      <Name>profileIcon839</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon840.jpg">
+      <Name>profileIcon840</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon841.jpg">
+      <Name>profileIcon841</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon842.jpg">
+      <Name>profileIcon842</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon843.jpg">
+      <Name>profileIcon843</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon844.jpg">
+      <Name>profileIcon844</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon845.jpg">
+      <Name>profileIcon845</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon846.jpg">
+      <Name>profileIcon846</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon847.jpg">
+      <Name>profileIcon847</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon848.jpg">
+      <Name>profileIcon848</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon849.jpg">
+      <Name>profileIcon849</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon850.jpg">
+      <Name>profileIcon850</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon851.jpg">
+      <Name>profileIcon851</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon852.jpg">
+      <Name>profileIcon852</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon853.jpg">
+      <Name>profileIcon853</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon854.jpg">
+      <Name>profileIcon854</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon855.jpg">
+      <Name>profileIcon855</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon856.jpg">
+      <Name>profileIcon856</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon857.jpg">
+      <Name>profileIcon857</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon858.jpg">
+      <Name>profileIcon858</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon859.jpg">
+      <Name>profileIcon859</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon860.jpg">
+      <Name>profileIcon860</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon861.jpg">
+      <Name>profileIcon861</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon862.jpg">
+      <Name>profileIcon862</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon863.jpg">
+      <Name>profileIcon863</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon864.jpg">
+      <Name>profileIcon864</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon865.jpg">
+      <Name>profileIcon865</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon866.jpg">
+      <Name>profileIcon866</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon867.jpg">
+      <Name>profileIcon867</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon868.jpg">
+      <Name>profileIcon868</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon869.jpg">
+      <Name>profileIcon869</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon870.jpg">
+      <Name>profileIcon870</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon871.jpg">
+      <Name>profileIcon871</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon872.jpg">
+      <Name>profileIcon872</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon873.jpg">
+      <Name>profileIcon873</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon874.jpg">
+      <Name>profileIcon874</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon875.jpg">
+      <Name>profileIcon875</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon876.jpg">
+      <Name>profileIcon876</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon877.jpg">
+      <Name>profileIcon877</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon878.jpg">
+      <Name>profileIcon878</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon879.jpg">
+      <Name>profileIcon879</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon880.jpg">
+      <Name>profileIcon880</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon881.jpg">
+      <Name>profileIcon881</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon882.jpg">
+      <Name>profileIcon882</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon883.jpg">
+      <Name>profileIcon883</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon884.jpg">
+      <Name>profileIcon884</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon885.jpg">
+      <Name>profileIcon885</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon886.jpg">
+      <Name>profileIcon886</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon887.jpg">
+      <Name>profileIcon887</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon888.jpg">
+      <Name>profileIcon888</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon889.jpg">
+      <Name>profileIcon889</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon890.jpg">
+      <Name>profileIcon890</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon891.jpg">
+      <Name>profileIcon891</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon892.jpg">
+      <Name>profileIcon892</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon893.jpg">
+      <Name>profileIcon893</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon894.jpg">
+      <Name>profileIcon894</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon895.jpg">
+      <Name>profileIcon895</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon896.jpg">
+      <Name>profileIcon896</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon897.jpg">
+      <Name>profileIcon897</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon898.jpg">
+      <Name>profileIcon898</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon899.jpg">
+      <Name>profileIcon899</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon900.jpg">
+      <Name>profileIcon900</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon901.jpg">
+      <Name>profileIcon901</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon902.jpg">
+      <Name>profileIcon902</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon903.jpg">
+      <Name>profileIcon903</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon904.jpg">
+      <Name>profileIcon904</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon905.jpg">
+      <Name>profileIcon905</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon906.jpg">
+      <Name>profileIcon906</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon907.jpg">
+      <Name>profileIcon907</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon908.jpg">
+      <Name>profileIcon908</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon909.jpg">
+      <Name>profileIcon909</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon910.jpg">
+      <Name>profileIcon910</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon911.jpg">
+      <Name>profileIcon911</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon912.jpg">
+      <Name>profileIcon912</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon913.jpg">
+      <Name>profileIcon913</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon914.jpg">
+      <Name>profileIcon914</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon915.jpg">
+      <Name>profileIcon915</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon916.jpg">
+      <Name>profileIcon916</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon917.jpg">
+      <Name>profileIcon917</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon918.jpg">
+      <Name>profileIcon918</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon919.jpg">
+      <Name>profileIcon919</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon920.jpg">
+      <Name>profileIcon920</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon921.jpg">
+      <Name>profileIcon921</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon922.jpg">
+      <Name>profileIcon922</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon923.jpg">
+      <Name>profileIcon923</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon924.jpg">
+      <Name>profileIcon924</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon925.jpg">
+      <Name>profileIcon925</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon926.jpg">
+      <Name>profileIcon926</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon927.jpg">
+      <Name>profileIcon927</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon928.jpg">
+      <Name>profileIcon928</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon929.jpg">
+      <Name>profileIcon929</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon930.jpg">
+      <Name>profileIcon930</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon931.jpg">
+      <Name>profileIcon931</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon932.jpg">
+      <Name>profileIcon932</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon933.jpg">
+      <Name>profileIcon933</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon934.jpg">
+      <Name>profileIcon934</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon935.jpg">
+      <Name>profileIcon935</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon936.jpg">
+      <Name>profileIcon936</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon937.jpg">
+      <Name>profileIcon937</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon938.jpg">
+      <Name>profileIcon938</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon939.jpg">
+      <Name>profileIcon939</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon940.jpg">
+      <Name>profileIcon940</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon941.jpg">
+      <Name>profileIcon941</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon942.jpg">
+      <Name>profileIcon942</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon943.jpg">
+      <Name>profileIcon943</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon944.jpg">
+      <Name>profileIcon944</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon945.jpg">
+      <Name>profileIcon945</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon946.jpg">
+      <Name>profileIcon946</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon948.jpg">
+      <Name>profileIcon948</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon949.jpg">
+      <Name>profileIcon949</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon950.jpg">
+      <Name>profileIcon950</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon951.jpg">
+      <Name>profileIcon951</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon952.jpg">
+      <Name>profileIcon952</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon953.jpg">
+      <Name>profileIcon953</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon954.jpg">
+      <Name>profileIcon954</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon955.jpg">
+      <Name>profileIcon955</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon956.jpg">
+      <Name>profileIcon956</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon957.jpg">
+      <Name>profileIcon957</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon958.jpg">
+      <Name>profileIcon958</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon959.jpg">
+      <Name>profileIcon959</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon960.jpg">
+      <Name>profileIcon960</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon961.jpg">
+      <Name>profileIcon961</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon962.jpg">
+      <Name>profileIcon962</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon963.jpg">
+      <Name>profileIcon963</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon964.jpg">
+      <Name>profileIcon964</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon965.jpg">
+      <Name>profileIcon965</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon966.jpg">
+      <Name>profileIcon966</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon967.jpg">
+      <Name>profileIcon967</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon968.jpg">
+      <Name>profileIcon968</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon969.jpg">
+      <Name>profileIcon969</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon970.jpg">
+      <Name>profileIcon970</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon971.jpg">
+      <Name>profileIcon971</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon972.jpg">
+      <Name>profileIcon972</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon973.jpg">
+      <Name>profileIcon973</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon974.jpg">
+      <Name>profileIcon974</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon975.jpg">
+      <Name>profileIcon975</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon976.jpg">
+      <Name>profileIcon976</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon977.jpg">
+      <Name>profileIcon977</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon978.jpg">
+      <Name>profileIcon978</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon979.jpg">
+      <Name>profileIcon979</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon980.jpg">
+      <Name>profileIcon980</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon981.jpg">
+      <Name>profileIcon981</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon982.jpg">
+      <Name>profileIcon982</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon983.jpg">
+      <Name>profileIcon983</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon984.jpg">
+      <Name>profileIcon984</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\icons\profileIcon985.jpg">
+      <Name>profileIcon985</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DraftScreen.JPG">
+      <Name>DraftScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="sounds\champselect.mp3">
+      <Name>champselect</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\login.mp3">
+      <Name>login</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\playbutton.mp3">
+      <Name>playbutton</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DraftMenu.png">
+      <Name>DraftMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="sounds\draftmenu.mp3">
+      <Name>draftmenu</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="sounds\champs\Aatrox.mp3">
+      <Name>Aatrox</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Ahri.mp3">
+      <Name>Ahri</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Akali.mp3">
+      <Name>Akali</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Alistar.mp3">
+      <Name>Alistar</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Amumu.mp3">
+      <Name>Amumu</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Anivia.mp3">
+      <Name>Anivia</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Annie.mp3">
+      <Name>Annie</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Ashe.mp3">
+      <Name>Ashe</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Blitzcrank.mp3">
+      <Name>Blitzcrank</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Brand.mp3">
+      <Name>Brand</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Caitlyn.mp3">
+      <Name>Caitlyn</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Cassiopeia.mp3">
+      <Name>Cassiopeia</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Chogath.mp3">
+      <Name>Chogath</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Corki.mp3">
+      <Name>Corki</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Darius.mp3">
+      <Name>Darius</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Diana.mp3">
+      <Name>Diana</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Draven.mp3">
+      <Name>Draven</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\DrMundo.mp3">
+      <Name>DrMundo</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Ekko.mp3">
+      <Name>Ekko</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Elise.mp3">
+      <Name>Elise</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Evelynn.mp3">
+      <Name>Evelynn</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Ezreal.mp3">
+      <Name>Ezreal</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\FiddleSticks.mp3">
+      <Name>FiddleSticks</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Fiora.mp3">
+      <Name>Fiora</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Fizz.mp3">
+      <Name>Fizz</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Galio.mp3">
+      <Name>Galio</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Gangplank.mp3">
+      <Name>Gangplank</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Garen.mp3">
+      <Name>Garen</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Gnar.mp3">
+      <Name>Gnar</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Gragas.mp3">
+      <Name>Gragas</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Graves.mp3">
+      <Name>Graves</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Hecarim.mp3">
+      <Name>Hecarim</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Heimerdinger.mp3">
+      <Name>Heimerdinger</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Irelia.mp3">
+      <Name>Irelia</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Janna.mp3">
+      <Name>Janna</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\JarvanIV.mp3">
+      <Name>JarvanIV</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Jax.mp3">
+      <Name>Jax</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Jayce.mp3">
+      <Name>Jayce</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Jinx.mp3">
+      <Name>Jinx</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Kalista.mp3">
+      <Name>Kalista</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Karma.mp3">
+      <Name>Karma</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Karthus.mp3">
+      <Name>Karthus</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Kassadin.mp3">
+      <Name>Kassadin</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Katarina.mp3">
+      <Name>Katarina</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Kayle.mp3">
+      <Name>Kayle</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Kennen.mp3">
+      <Name>Kennen</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Khazix.mp3">
+      <Name>Khazix</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Kindred.mp3">
+      <Name>Kindred</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\KogMaw.mp3">
+      <Name>KogMaw</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\LeBlanc.mp3">
+      <Name>LeBlanc</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\LeeSin.mp3">
+      <Name>LeeSin</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Leona.mp3">
+      <Name>Leona</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Lissandra.mp3">
+      <Name>Lissandra</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Lucian.mp3">
+      <Name>Lucian</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Lulu.mp3">
+      <Name>Lulu</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Lux.mp3">
+      <Name>Lux</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Malphite.mp3">
+      <Name>Malphite</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Malzahar.mp3">
+      <Name>Malzahar</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Maokai.mp3">
+      <Name>Maokai</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\MasterYi.mp3">
+      <Name>MasterYi</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\MissFortune.mp3">
+      <Name>MissFortune</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\MonkeyKing.mp3">
+      <Name>MonkeyKing</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Mordekaiser.mp3">
+      <Name>Mordekaiser</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Morgana.mp3">
+      <Name>Morgana</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Nami.mp3">
+      <Name>Nami</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Nasus.mp3">
+      <Name>Nasus</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Nautilus.mp3">
+      <Name>Nautilus</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Nidalee.mp3">
+      <Name>Nidalee</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Nocturne.mp3">
+      <Name>Nocturne</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Nunu.mp3">
+      <Name>Nunu</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Olaf.mp3">
+      <Name>Olaf</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Orianna.mp3">
+      <Name>Orianna</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Pantheon.mp3">
+      <Name>Pantheon</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Permission.mp3">
+      <Name>Permission</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Poppy.mp3">
+      <Name>Poppy</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Quinn.mp3">
+      <Name>Quinn</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Rammus.mp3">
+      <Name>Rammus</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Reksai.mp3">
+      <Name>Reksai</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Renekton.mp3">
+      <Name>Renekton</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Rengar.mp3">
+      <Name>Rengar</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Riven.mp3">
+      <Name>Riven</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Rumble.mp3">
+      <Name>Rumble</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Ryze.mp3">
+      <Name>Ryze</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Sejuani.mp3">
+      <Name>Sejuani</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Shaco.mp3">
+      <Name>Shaco</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Shen.mp3">
+      <Name>Shen</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Shyvana.mp3">
+      <Name>Shyvana</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Singed.mp3">
+      <Name>Singed</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Sion.mp3">
+      <Name>Sion</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Sivir.mp3">
+      <Name>Sivir</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Skarner.mp3">
+      <Name>Skarner</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Sona.mp3">
+      <Name>Sona</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Soraka.mp3">
+      <Name>Soraka</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Swain.mp3">
+      <Name>Swain</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Syndra.mp3">
+      <Name>Syndra</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Talon.mp3">
+      <Name>Talon</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Taric.mp3">
+      <Name>Taric</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Teemo.mp3">
+      <Name>Teemo</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Thresh.mp3">
+      <Name>Thresh</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Tristana.mp3">
+      <Name>Tristana</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Trundle.mp3">
+      <Name>Trundle</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Tryndamere.mp3">
+      <Name>Tryndamere</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\TwistedFate.mp3">
+      <Name>TwistedFate</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Twitch.mp3">
+      <Name>Twitch</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Udyr.mp3">
+      <Name>Udyr</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Urgot.mp3">
+      <Name>Urgot</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Varus.mp3">
+      <Name>Varus</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Vayne.mp3">
+      <Name>Vayne</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Veigar.mp3">
+      <Name>Veigar</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\VelKoz.mp3">
+      <Name>VelKoz</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Vi.mp3">
+      <Name>Vi</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Viktor.mp3">
+      <Name>Viktor</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Vladimir.mp3">
+      <Name>Vladimir</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Volibear.mp3">
+      <Name>Volibear</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Warwick.mp3">
+      <Name>Warwick</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Xerath.mp3">
+      <Name>Xerath</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\XinZhao.mp3">
+      <Name>XinZhao</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Yasuo.mp3">
+      <Name>Yasuo</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Yorick.mp3">
+      <Name>Yorick</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Zac.mp3">
+      <Name>Zac</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Zed.mp3">
+      <Name>Zed</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Ziggs.mp3">
+      <Name>Ziggs</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Zilean.mp3">
+      <Name>Zilean</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\champs\Zyra.mp3">
+      <Name>Zyra</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="leagueassets\draftmenus\draftmenu31.png">
+      <Name>draftmenu31</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\draftmenus\draftmenu31e.png">
+      <Name>draftmenu31e</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\draftmenus\draftmenu32.png">
+      <Name>draftmenu32</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\draftmenus\draftmenu32e.png">
+      <Name>draftmenu32e</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\draftmenus\draftmenu33.png">
+      <Name>draftmenu33</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\draftmenus\draftmenu33e.png">
+      <Name>draftmenu33e</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\draftmenus\draftmenu34.png">
+      <Name>draftmenu34</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\draftmenus\draftmenu34e.png">
+      <Name>draftmenu34e</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\draftmenus\draftmenu35.png">
+      <Name>draftmenu35</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="leagueassets\draftmenus\draftmenu35e.png">
+      <Name>draftmenu35e</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="champicon\Aatrox_Square_0.png">
+      <Name>Aatrox_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Ahri_Square_0.png">
+      <Name>Ahri_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Akali_Square_0.png">
+      <Name>Akali_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Alistar_Square_0.png">
+      <Name>Alistar_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Amumu_Square_0.png">
+      <Name>Amumu_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Anivia_Square_0.png">
+      <Name>Anivia_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Annie_Square_0.png">
+      <Name>Annie_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Ashe_Square_0.png">
+      <Name>Ashe_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Azir_Square_0.png">
+      <Name>Azir_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Bard_Square_0.png">
+      <Name>Bard_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Blitzcrank_Square_0.png">
+      <Name>Blitzcrank_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Brand_Square_0.png">
+      <Name>Brand_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Braum_Square_0.png">
+      <Name>Braum_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Caitlyn_Square_0.png">
+      <Name>Caitlyn_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Cassiopeia_Square_0.png">
+      <Name>Cassiopeia_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Chogath_Square_0.png">
+      <Name>Chogath_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Corki_Square_0.png">
+      <Name>Corki_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Darius_Square_0.png">
+      <Name>Darius_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Diana_Square_0.png">
+      <Name>Diana_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Draven_Square_0.png">
+      <Name>Draven_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\DrMundo_Square_0.png">
+      <Name>DrMundo_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Ekko_Square_0.png">
+      <Name>Ekko_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Elise_Square_0.png">
+      <Name>Elise_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Evelynn_Square_0.png">
+      <Name>Evelynn_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Ezreal_Square_0.png">
+      <Name>Ezreal_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Fiddlesticks_Square_0.png">
+      <Name>Fiddlesticks_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Fiora_Square_0.png">
+      <Name>Fiora_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Fizz_square_0.png">
+      <Name>Fizz_square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Galio_Square_0.png">
+      <Name>Galio_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Gangplank_Square_0.png">
+      <Name>Gangplank_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Garen_Square_0.png">
+      <Name>Garen_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Gnar_Square_0.png">
+      <Name>Gnar_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Gragas_Square_0.png">
+      <Name>Gragas_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Graves_Square_0.png">
+      <Name>Graves_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Hecarim_Square_0.png">
+      <Name>Hecarim_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Heimerdinger_Square_0.png">
+      <Name>Heimerdinger_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Illaoi_Square_0.png">
+      <Name>Illaoi_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Irelia_Square_0.png">
+      <Name>Irelia_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Janna_Square_0.png">
+      <Name>Janna_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\JarvanIV_Square_0.png">
+      <Name>JarvanIV_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Jax_Square_0.png">
+      <Name>Jax_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Jayce_Square_0.png">
+      <Name>Jayce_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Jinx_Square_0.png">
+      <Name>Jinx_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Kalista_Square_0.png">
+      <Name>Kalista_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Karma_Square_0.png">
+      <Name>Karma_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Karthus_Square_0.png">
+      <Name>Karthus_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Kassadin_Square_0.png">
+      <Name>Kassadin_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Katarina_Square_0.png">
+      <Name>Katarina_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Kayle_Square_0.png">
+      <Name>Kayle_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Kennen_Square_0.png">
+      <Name>Kennen_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Khazix_Square_0.png">
+      <Name>Khazix_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Kindred_Square_0.png">
+      <Name>Kindred_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\KogMaw_Square_0.png">
+      <Name>KogMaw_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Leblanc_Square_0.png">
+      <Name>Leblanc_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\LeeSin_Square_0.png">
+      <Name>LeeSin_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Leona_Square_0.png">
+      <Name>Leona_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Lissandra_Square_0.png">
+      <Name>Lissandra_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Lucian_Square_0.png">
+      <Name>Lucian_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Lulu_Square_0.png">
+      <Name>Lulu_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Lux_Square_0.png">
+      <Name>Lux_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Malphite_Square_0.png">
+      <Name>Malphite_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Malzahar_Square_0.png">
+      <Name>Malzahar_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Maokai_Square_0.png">
+      <Name>Maokai_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\MasterYi_Square_0.png">
+      <Name>MasterYi_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\MissFortune_Square_0.png">
+      <Name>MissFortune_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\MonkeyKing_Square_0.png">
+      <Name>MonkeyKing_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Mordekaiser_Square_0.png">
+      <Name>Mordekaiser_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Morgana_Square_0.png">
+      <Name>Morgana_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Nami_Square_0.png">
+      <Name>Nami_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Nasus_Square_0.png">
+      <Name>Nasus_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Nautilus_Square_0.png">
+      <Name>Nautilus_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Nidalee_Square_0.png">
+      <Name>Nidalee_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Nocturne_Square_0.png">
+      <Name>Nocturne_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Nunu_Square_0.png">
+      <Name>Nunu_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Olaf_Square_0.png">
+      <Name>Olaf_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Orianna_Square_0.png">
+      <Name>Orianna_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Pantheon_Square_0.png">
+      <Name>Pantheon_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Poppy_Square_0.png">
+      <Name>Poppy_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Quinn_Square_0.png">
+      <Name>Quinn_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Rammus_Square_0.png">
+      <Name>Rammus_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\RekSai_Square_0.png">
+      <Name>RekSai_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Renekton_Square_0.png">
+      <Name>Renekton_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Rengar_Square_0.png">
+      <Name>Rengar_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Riven_Square_0.png">
+      <Name>Riven_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Rumble_Square_0.png">
+      <Name>Rumble_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Ryze_Square_0.png">
+      <Name>Ryze_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Sejuani_Square_0.png">
+      <Name>Sejuani_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Shaco_Square_0.png">
+      <Name>Shaco_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Shen_Square_0.png">
+      <Name>Shen_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Shyvana_Square_0.png">
+      <Name>Shyvana_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Singed_Square_0.png">
+      <Name>Singed_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Sion_Square_0.png">
+      <Name>Sion_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Sivir_Square_0.png">
+      <Name>Sivir_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Skarner_Square_0.png">
+      <Name>Skarner_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Sona_Square_0.png">
+      <Name>Sona_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Soraka_Square_0.png">
+      <Name>Soraka_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Swain_Square_0.png">
+      <Name>Swain_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Syndra_Square_0.png">
+      <Name>Syndra_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\TahmKench_Square_0.png">
+      <Name>TahmKench_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Talon_Square_0.png">
+      <Name>Talon_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Taric_Square_0.png">
+      <Name>Taric_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Teemo_Square_0.png">
+      <Name>Teemo_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Thresh_Square_0.png">
+      <Name>Thresh_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Tristana_Square_0.png">
+      <Name>Tristana_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Trundle_Square_0.png">
+      <Name>Trundle_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Tryndamere_Square_0.png">
+      <Name>Tryndamere_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\TwistedFate_Square_0.png">
+      <Name>TwistedFate_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Twitch_Square_0.png">
+      <Name>Twitch_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Udyr_Square_0.png">
+      <Name>Udyr_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Urgot_Square_0.png">
+      <Name>Urgot_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Varus_Square_0.png">
+      <Name>Varus_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Vayne_Square_0.png">
+      <Name>Vayne_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Veigar_Square_0.png">
+      <Name>Veigar_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\VelKoz_Square_0.png">
+      <Name>VelKoz_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Viktor_Square_0.png">
+      <Name>Viktor_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Vi_Square_0.png">
+      <Name>Vi_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Vladimir_Square_0.png">
+      <Name>Vladimir_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Volibear_Square_0.png">
+      <Name>Volibear_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Warwick_Square_0.png">
+      <Name>Warwick_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Xerath_Square_0.png">
+      <Name>Xerath_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\XinZhao_Square_0.png">
+      <Name>XinZhao_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Yasuo_Square_0.png">
+      <Name>Yasuo_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Yorick_Square_0.png">
+      <Name>Yorick_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Zac_Square_0.png">
+      <Name>Zac_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Zed_Square_0.png">
+      <Name>Zed_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Ziggs_Square_0.png">
+      <Name>Ziggs_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Zilean_Square_0.png">
+      <Name>Zilean_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="champicon\Zyra_Square_0.png">
+      <Name>Zyra_Square_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DraftMenu2.png">
+      <Name>DraftMenu2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="players\marinprof.png">
+      <Name>marinprof</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SpriteFont1.spritefont">
+      <Name>SpriteFont1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="myFont.spritefont">
+      <Name>myFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="players\fakerprof.png">
+      <Name>fakerprof</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1selected.png">
+      <Name>1selected</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="lockin.png">
+      <Name>lockin</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="sounds\air_box_chalkcheck_1.mp3">
+      <Name>air_box_chalkcheck_1</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\countdown10seconds.mp3">
+      <Name>countdown10seconds</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\exitchampionselect.mp3">
+      <Name>exitchampionselect</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+    <Compile Include="sounds\yourturn.mp3">
+      <Name>yourturn</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
