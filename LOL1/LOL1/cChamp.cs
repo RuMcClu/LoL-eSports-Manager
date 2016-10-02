@@ -7,5 +7,6 @@ namespace LOL1
 {
     class cChamp
     {
+        //class for champions for the next stage
     }
 }
