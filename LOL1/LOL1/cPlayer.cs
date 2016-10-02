@@ -10,6 +10,8 @@ namespace LOL1
 {
     class cPlayer
     {
+        //player class governs the players that get loaded during the champ select screen with names, positions, pictures, and champion
+        //stats. Yet to be added is the post champ select stats: Team cohesion, champion effectiveness, average CS per 10 etc.....
         SpriteFont font;
         string Name;
         string Role;
@@ -41,6 +43,7 @@ namespace LOL1
         {
             rectangle = new Rectangle((int)position.X, (int)position.Y, (int)size.X, (int)size.Y);
         }
+        //draws the player picture
         public void Draw(SpriteBatch spriteBatch)
         {
             //  switch (CurrentRoleState)
@@ -52,11 +55,12 @@ namespace LOL1
             // if (CurrentRoleState == "RoleState".Role)
             //{
 
-            //}
+            //} MOVED THE SWITCH UNDER THE SWITCH IN cDraftTabs
             spriteBatch.Draw(texture, rectangle, Color.White);
             DrawText(spriteBatch);
 
         }
+        //writes the player name
         private void DrawText(SpriteBatch spriteBatch)
         {
                   spriteBatch.DrawString(font,Name, new Vector2(660, 290), Color.White);
