@@ -12,13 +12,14 @@ namespace LOL1
 {
     class cButton
     {
+        //button class for all types of screen
         Texture2D texture;
         SoundEffect sound;
         Vector2 position;
         Rectangle rectangle;
 
         Color colour = new Color(255, 255, 255, 255);
-
+        //for flashing
         public Vector2 size;
 
         public cButton(Texture2D newTexture, SoundEffect newSound, GraphicsDevice graphics)
@@ -28,7 +29,9 @@ namespace LOL1
             //ScreenW = 1600, Screenh = 1200
             //ImgW    = 100, ImgH    = 100
             size = new Vector2(graphics.Viewport.Width *2 / 17, graphics.Viewport.Height / 15);
+            //in future make different sizes
         }
+        //bools that govern whether it's depressed clicked or enabled.
         bool down;
         public bool isClicked;
         public bool Enabled;
@@ -64,7 +67,7 @@ namespace LOL1
             }
         }
 
-        
+        //count void to stop the sound playing multiple times with button depress
          public void Count()
         {
 
