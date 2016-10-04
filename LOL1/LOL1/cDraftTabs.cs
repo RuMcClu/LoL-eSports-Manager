@@ -12,6 +12,8 @@ namespace LOL1
     
         
     {
+        //This class is for the Drafting menu and loads background textures and so on for that.
+        //inset are the players, player names and champ buttons
         SpriteFont font;
         
         Texture2D texture1;
@@ -48,6 +50,7 @@ namespace LOL1
 
         public enum TabState
         {
+            //enum switch controls which player you look at based on the role. w/ e is red side, w/o is blue side
             Top,
             Tope,
             Jung,
@@ -116,7 +119,7 @@ namespace LOL1
           
             if (mouseRectangle.Intersects(rectangle1))
             {
-
+                    //switch controls going between menu states in the tab
                 if (mouse.LeftButton == ButtonState.Pressed)
                 {
                     isClicked1 = true;
