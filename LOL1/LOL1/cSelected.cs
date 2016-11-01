@@ -9,8 +9,11 @@ using Microsoft.Xna.Framework.Input;
 
 namespace LOL1
 {
+    //This class is a button selector for the chbtn class which stops the sound from coming out multiple times
+    //bugfixclass
     class cSelected
     {
+       
         Texture2D texture;
         Vector2 position;
         Rectangle rectangle;
